@@ -1,5 +1,5 @@
 diff --git a/example.py b/example.py
-index beda9d4..5ddbc75 100644
+index beda9d4..91636d0 100644
 --- a/example.py
 +++ b/example.py
 @@ -12,12 +12,13 @@ from follow_protocol import follow_protocol
@@ -13,8 +13,9 @@ index beda9d4..5ddbc75 100644
 +    login=os.environ["USERNAME"],
 +    password=os.environ["PASSWORD"],
      like_per_day=1000,
-     comments_per_day=0,
+-    comments_per_day=0,
 -    tag_list=['follow4follow', 'f4f', 'cute'],
++    comments_per_day=48,
 +    tag_list=os.environ['HASHTAGS'].split(),
      tag_blacklist=['rain', 'thunderstorm'],
      user_blacklist={},
