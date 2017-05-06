@@ -6,4 +6,4 @@ RUN git clone https://github.com/LevPasha/instabot.py \
 ADD clean.patch /instabot.py/
 RUN cd /instabot.py\
   && git apply clean.patch
-CMD python /instabot.py/site.py
+CMD python /instabot.py/example.py
